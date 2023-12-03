@@ -1,5 +1,10 @@
 ## Flutter Flavors Setup with multiple Firebase Environments using FlutterFire.
 
+### [Create flavors of a Flutter app](https://docs.flutter.dev/deployment/flavors)
+### [Code with andrea](https://codewithandrea.com/articles/flutter-flavors-for-firebase-apps/)
+### [Medium](https://kmtsandeepanie.medium.com/set-up-multiple-firebase-environments-in-flutter-9f88bc284454#:~:text=In%20Flutter%2C%20configuring%20different%20environments,app%20with%20different%20configuration%20options)
+
+
 1. Install and run the FlutterFire CLI
 ```dart
 dart pub global activate flutterfire_cli
