@@ -18,5 +18,8 @@ rm -rf ios/Flutter/Flutter.framework
 flutter pub get
 ```
 ```dart
-cd ios/pod install
+cd ios
+```
+```dart
+pod install
 ```
