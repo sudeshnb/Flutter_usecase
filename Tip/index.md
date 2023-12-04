@@ -140,7 +140,7 @@ Now, we need to connect each build configuration to the correct scheme. First, s
 
 <img width="528" alt="Schemes" src="https://miro.medium.com/v2/resize:fit:1212/format:webp/1*XIv1SfCkEmoLMUi8CHOdbg.png">
 
-In below window, Select “Run” and give “Debug-dev” as the build configuration. Give the correct build configurations in “Test”, “Profile”, Analyze” and “Archive” actions too as shown in the following image. Do this same process for prod scheme.
+In below window, Select “Run” and give “Debug-development” as the build configuration. Give the correct build configurations in “Test”, “Profile”, Analyze” and “Archive” actions too as shown in the following image. Do this same process for prod scheme.
 
 <img width="528" alt="Schemes" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*030Ey9Zr36_bR7H-K5_BsQ.png">
 
@@ -158,11 +158,11 @@ PLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app
 # We have named our Build Configurations as Debug-dev, Debug-prod etc.
 # Here, dev and prod are the scheme names. This kind of naming is required by Flutter for flavors to work.
 # We are using the $CONFIGURATION variable available in the XCode build environment to get the build configuration.
-if [ "${CONFIGURATION}" == "Debug-prod" ] || [ "${CONFIGURATION}" == "Release-prod" ] || [ "${CONFIGURATION}" == "Profile-prod" ] || [ "${CONFIGURATION}" == "Release" ]; then
-cp "${PROJECT_DIR}/config/prod/GoogleService-Info.plist" "${PLIST_DESTINATION}/GoogleService-Info.plist"
+if [ "${CONFIGURATION}" == "Debug-production" ] || [ "${CONFIGURATION}" == "Release-production" ] || [ "${CONFIGURATION}" == "Profile-production" ] || [ "${CONFIGURATION}" == "Release" ]; then
+cp "${PROJECT_DIR}/config/production/GoogleService-Info.plist" "${PLIST_DESTINATION}/GoogleService-Info.plist"
 echo "Production plist copied"
-elif [ "${CONFIGURATION}" == "Debug-dev" ] || [ "${CONFIGURATION}" == "Release-dev" ] || [ "${CONFIGURATION}" == "Profile-dev" ] || [ "${CONFIGURATION}" == "Debug" ]; then
-cp "${PROJECT_DIR}/config/dev/GoogleService-Info.plist" "${PLIST_DESTINATION}/GoogleService-Info.plist"
+elif [ "${CONFIGURATION}" == "Debug-development" ] || [ "${CONFIGURATION}" == "Release-development" ] || [ "${CONFIGURATION}" == "Profile-development" ] || [ "${CONFIGURATION}" == "Debug" ]; then
+cp "${PROJECT_DIR}/config/development/GoogleService-Info.plist" "${PLIST_DESTINATION}/GoogleService-Info.plist"
 echo "Development plist copied"
 fi
 ```
