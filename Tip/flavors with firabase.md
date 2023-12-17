@@ -1,4 +1,4 @@
-## Flutter Flavors Setup with multiple Firebase Environments using FlutterFire.
+## Flutter Flavors Setup with multiple Firebase Environments using Flutter Fire.
 
 ### [Create flavors of a Flutter app](https://docs.flutter.dev/deployment/flavors)
 ### [Code with andrea](https://codewithandrea.com/articles/flutter-flavors-for-firebase-apps/)
